@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>My First Web Page</h2>
+<p>My First Paragraph.</p>
+
+
+<form>
+  <input type="number" id="ndemo" />
+  <button type = "button" onclick="callingitem()">Submit</button>
+</form>
+<p id ="demo">aqui va el valor</p>
+<script>
+	var n = 10
+	function callingitem(){
+
+
+var x= parseInt(document.getElementById("ndemo").value);
+//alert(x);
+
+//document.write(x)
+n-=1
+document.getElementById("demo").innerHTML=n
+}
+</script>	
+
+</body>

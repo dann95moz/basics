@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>peso en otro planeta</title>
+</head>
+<body>
+    <h1>Tu peso en otro planeta</h1>
+<form>
+    <label for = "peso">
+    Ingresa tu peso en Kg<br><br>
+    <input id="peso"type ="number"/>
+    </label>
+    <p>Calcular el peso en</p>
+   
+    <button class="btn waves-effect waves-light" type="button" onclick="myFunction()" name="action">Jupiter
+        <i class="material-icons right">chevron_right</i>
+        
+    <button class="btn waves-effect waves-light" type="button" onclick="myFunction2()" name="action">Marte
+        <i class="material-icons right">chevron_right</i>
+      </button>
+    
+</form>
+
+<script>
+    const earth = 9.8
+    const mars = 3.7
+    const jupiter = 24.8
+    
+    ;
+    function myFunction(){
+        var Wjupiter = parseInt(document.getElementById ("peso").value)*jupiter;
+        
+        alert("el peso en ese planeta es "+ Wjupiter)
+    }
+    function myFunction2(){
+        var Wmars = parseInt(document.getElementById ("peso").value)*mars;
+        alert("el peso en ese planeta es "+ Wmars)
+    }
+        
+</script>
+<script type="text/javascript" src="js/materialize.min.js"></script>    
+</body>
+</html>

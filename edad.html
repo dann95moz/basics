@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Año de nacimiento</title>
+</head>
+<body>
+    <h1>Tu edad a partir de tu año de nacimiento</h1>
+<form>
+    <label for = "nacimiento">
+    Ingresa tu año de nacimiento
+    <input id="nacimiento"type ="number"/>
+    </label>
+    <p>Calcular la edad</p>
+   
+    <button class="btn waves-effect waves-light" type="button" onclick="myFunction()" name="action">Calcula tu edad
+        <i class="material-icons right">chevron_right</i>
+        
+    
+</form>
+
+<script>
+    
+    
+    ;
+    function myFunction(){
+        var fecha = - parseInt(document.getElementById ("nacimiento").value)+2021;
+        
+        alert("tu edad es " + fecha)
+    }
+           
+</script>
+<script type="text/javascript" src="js/materialize.min.js"></script>    
+</body>
+</html>
